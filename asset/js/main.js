@@ -1,15 +1,13 @@
-let numberThree = document.getElementById("show");
-let backgroundFizz = document.getElementById("numberContainer");
+let container = document.getElementById("containerNumber");
 
-for ( i = 1; i<= 1000; i++){
-    document.getElementById("numberContainer").innerHTML += `<div id="fizz" class="p-5 number">${i}</div>`;
-    if( i % 3 == 0){
-        document.getElementById("fizz").innerHTML = "fizz";
-    }
-    if( i % 5 == 0){
-        document.getElementById("fizz").innerHTML = "buzz";
-    }
-    if( i % 3 == 0 && i % 5 == 0){
-        console.log("numero divisibile per 3 e per 5");
+for (let i = 1; i<= 1000; i++){
+    if(i % 3 == 0){
+        container.innerHTML += `<div>Fizz</div>`;
+    } else if(i % 5 == 0){
+        container.innerHTML += `<div>Buzz</div>`;
+    } else if (i % 3 == 0 && i % 5 == 0){
+        container.innerHTML += `<div>FizzBuzz</div>`;
+    } else {
+        container.innerHTML += `<div>${i}</div>`;
     }
 }
