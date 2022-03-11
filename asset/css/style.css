@@ -8,33 +8,46 @@ html{
     background-color: #083B4C;
 }
 
+/* EFFECTS */
+.cursor:hover{
+    cursor: pointer;
+}
+
+.zoom{
+    transition: 0.2s;
+}
+
+.zoom:hover{
+    transform: scale(0.9);
+}
+
 /* MAIN */
-/* container dei quadrati */
 .buzzContainer{
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 20px 20px;
 }
 
 .number{
-    flex-basis: calc(90% / 7);
+    width: 90px;
+    height: 90px;
     display: flex;
     justify-content: center;
-    border: 1px solid white;
-    margin-bottom: 20px;
+    align-items: center;
     background-color: #1289B2;
 }
-/* Classi da aggiungere ai multipli per 3 */
+
+/* Classe da aggiungere ai multipli per 3 */
 .squareFizz{
     background-color: #08D6A0;
 }
-
+/* Classe da aggiungere ai multipli per 5 */
 .squareBuzz{
     background-color: #FFD166;
 }
-
+/* Classe da aggiungere ai multipli di entrambi */
 .squareFizzBuzz{
     background-color: #F0466F;
 }
