@@ -1,0 +1,33 @@
+/* GENERAL */
+html{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.background{
+    background-color: #083B4C;
+}
+
+/* MAIN */
+/* container dei quadrati */
+.buzzContainer{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.number{
+    flex-basis: calc(90% / 7);
+    display: flex;
+    justify-content: center;
+    border: 1px solid white;
+    margin-bottom: 20px;
+}
+/* Classi da aggiungere ai multipli per 3 */
+.squareFizz{
+    background-color: #08D6A0;
+}
+
+
