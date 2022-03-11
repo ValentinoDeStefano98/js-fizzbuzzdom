@@ -24,10 +24,20 @@ html{
     justify-content: center;
     border: 1px solid white;
     margin-bottom: 20px;
+    background-color: #1289B2;
 }
 /* Classi da aggiungere ai multipli per 3 */
 .squareFizz{
     background-color: #08D6A0;
 }
+
+.squareBuzz{
+    background-color: #FFD166;
+}
+
+.squareFizzBuzz{
+    background-color: #F0466F;
+}
+
 
 
